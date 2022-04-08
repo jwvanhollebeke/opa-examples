@@ -1,0 +1,5 @@
+**/.terraform
+**/*.binary
+**/tfplan*.json
+**/*.tfstate
+**/*.tfstate.backup
