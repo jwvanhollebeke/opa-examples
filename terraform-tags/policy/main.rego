@@ -17,7 +17,6 @@ get_tags(resource) = tags {
 
 deny[reason] {
 	resource := input.resource_changes[_]
-	action := resource.change.actions[count(resource.change.actions) - 1]
 	tags := get_tags(resource)
 
 	actual_tags := [key | tags[key]]
